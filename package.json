@@ -1,0 +1,28 @@
+{
+  "name": "-completeauthentication-expressjs",
+  "version": "1.0.0",
+  "description": "npm init -y\r     This creates a package.json file (your project configuration).\r npm install express\r     Express will be installed inside node_modules.\r index.js",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TufanDas/-CompleteAuthentication-ExpressJS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TufanDas/-CompleteAuthentication-ExpressJS/issues"
+  },
+  "homepage": "https://github.com/TufanDas/-CompleteAuthentication-ExpressJS#readme",
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "mongoose": "^9.3.0",
+    "morgan": "^1.10.1"
+  }
+}
