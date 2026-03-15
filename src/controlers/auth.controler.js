@@ -1,5 +1,7 @@
 import userModel from "../models/user.model.js"
 import crypto from "crypto"
+import jwt from "jsonwebtoken"
+import config from "../config/config.js"
 
 
 export async function register(req, res){
@@ -21,6 +23,21 @@ export async function register(req, res){
         username,
         email,
         password:hashedPassword
+    })
+
+    const token = jwt.sign({
+        id:user._id
+    }, config.JWT_SECRET,
+       {expiresIn:"1d"}
+    )
+
+    res.status(201).json({
+        msg:"user registered suuccessfully..",
+        user:{
+            username: user.username,
+            email:user.email,
+        },
+        token
     })
 
 }
