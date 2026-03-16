@@ -8,5 +8,8 @@ authRouter.post("/register", authControler.register)
 // api/auth/get-me
 authRouter.get("/get-me", authControler.getMe)
 
+// api/auth/refresh-token
+authRouter.get("/refresh-token", authControler.refreshToken)
+
 export default authRouter
 
